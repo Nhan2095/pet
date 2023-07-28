@@ -1,0 +1,2106 @@
+<!DOCTYPE html>
+<html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
+
+<head>
+    <meta charset="utf-8" />
+    <title> Pets Care - Bảng điều khiển
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <meta name="csrf-token" content="oYwHm6XldNdKDavz38yEQHYfMorWTlsCaF5cPhTl" />
+    <script src="https://thegioinoithat.website/assets/vendor/ckeditor5/build/ckeditor.js"></script>
+    <script src="https://thegioinoithat.website/assets/vendor/ckfinder/ckfinder.js"></script>
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="https://thegioinoithat.website/favicon.png" />
+    <link rel="stylesheet" href="https://thegioinoithat.website/assets/admin/libs/dropzone/dropzone.css" type="text/css" />
+
+    <!-- Filepond css -->
+    <link rel="stylesheet" href="https://thegioinoithat.website/assets/admin/libs/filepond/filepond.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://thegioinoithat.website/assets/admin/libs/filepond-plugin-image-preview/filepond-plugin-image-preview.min.css">
+    <!-- jsvectormap css -->
+    <link href="https://thegioinoithat.website/assets/admin/libs/jsvectormap/css/jsvectormap.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://thegioinoithat.website/assets/admin/libs/sweetalert2/sweetalert2.min.css" rel="stylesheet" type="text/css" />
+
+    <!--Swiper slider css-->
+    <link href="https://thegioinoithat.website/assets/admin/libs/swiper/swiper-bundle.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Layout config Js -->
+    <script src="https://thegioinoithat.website/assets/admin/js/layout.js"></script>
+    <!-- Bootstrap Css -->
+    <link href="https://thegioinoithat.website/assets/admin/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="https://thegioinoithat.website/assets/admin/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="https://thegioinoithat.website/assets/admin/css/app.min.css" rel="stylesheet" type="text/css" />
+    <!-- custom Css-->
+    <link href="https://thegioinoithat.website/assets/admin/css/custom.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+        <header id="page-topbar">
+            <div class="layout-width">
+                <div class="navbar-header">
+                    <div class="d-flex">
+                        <!-- LOGO -->
+                        <div class="navbar-brand-box horizontal-logo">
+                            <a href="https://thegioinoithat.website" class="logo logo-dark">
+                                <span class="logo-sm">
+                                    <img src="https://thegioinoithat.website/assets/images/logo/logo.png" alt=""
+                                        height="22" />
+                                </span>
+                                <span class="logo-lg">
+                                    <img src="https://thegioinoithat.website/assets/images/logo/logo.png" alt=""
+                                        height="70" />
+                                </span>
+                            </a>
+
+                            <a href="https://thegioinoithat.website" class="logo logo-light">
+                                <span class="logo-sm">
+                                    <img src="https://thegioinoithat.website/assets/images/logo/logo.png" alt=""
+                                        height="22" />
+                                </span>
+                                <span class="logo-lg">
+                                    <img src="https://thegioinoithat.website/assets/images/logo/logo.png" alt=""
+                                        height="70" />
+                                </span>
+                            </a>
+                        </div>
+
+                        <button type="button" class="btn btn-sm px-3 fs-16 header-item vertical-menu-btn topnav-hamburger shadow-none" id="topnav-hamburger-icon">
+                            <span class="hamburger-icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </button>
+
+                        <!-- App Search-->
+
+                    </div>
+
+                    <div class="d-flex align-items-center">
+                        <div class="dropdown d-md-none topbar-head-dropdown header-item">
+                            <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle shadow-none" id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="bx bx-search fs-22"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0" aria-labelledby="page-header-search-dropdown">
+                                <form class="p-3">
+                                    <div class="form-group m-0">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Tìm kiếm" aria-label="Recipient's username" />
+                                            <button class="btn btn-primary" type="submit">
+                                                <i class="mdi mdi-magnify"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="ms-1 header-item d-none d-sm-flex">
+                            <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle shadow-none" data-toggle="fullscreen">
+                                <i class="bx bx-fullscreen fs-22"></i>
+                            </button>
+                        </div>
+
+                        <div class="ms-1 header-item d-none d-sm-flex">
+                            <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle light-dark-mode shadow-none">
+                                <i class="bx bx-moon fs-22"></i>
+                            </button>
+                        </div>
+
+
+
+                        <div class="dropdown ms-sm-3 header-item topbar-user">
+                            <button type="button" class="btn shadow-none" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="d-flex align-items-center">
+                                    <img class="rounded-circle header-profile-user" src="https://lh3.googleusercontent.com/a/AAcHTtdRV7QBb_M2ARZ_r0f0Q8hHwwsd9SHrEZAci0z71Jgt=s96-c"
+                                        alt="Header Avatar" />
+                                    <span class="text-start ms-xl-2">
+                                        <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">
+                                            Phúc Nguyễn
+                                        </span>
+                                        <span
+                                            class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text">Admin</span>
+                                    </span>
+                                </span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <!-- item-->
+                                <h6 class="dropdown-header">Chào Phúc Nguyễn!</h6>
+                                <a class="dropdown-item" href="https://thegioinoithat.website/tai-khoan/thong-tin-ca-nhan"><i
+                                        class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i>
+                                    <span class="align-middle">Trang cá nhân</span></a>
+                                <a class="dropdown-item" href="https://thegioinoithat.website/auth/logout"><i
+                                        class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i>
+                                    <span class="align-middle" data-key="t-logout">Đăng xuất</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- removeNotificationModal -->
+        <!-- /.modal -->
+        <div class="app-menu navbar-menu">
+            <!-- LOGO -->
+            <div class="navbar-brand-box">
+                <!-- Dark Logo-->
+                <a href="https://thegioinoithat.website" class="logo logo-dark">
+            <span class="logo-sm">
+                <img src="https://thegioinoithat.website/assets/images/logo/logo.png" alt="" height="40" />
+            </span>
+            <span class="logo-lg">
+                <img src="https://thegioinoithat.website/assets/images/logo/logo.png" alt="" height="80" />
+            </span>
+        </a>
+                <!-- Light Logo-->
+                <a href="https://thegioinoithat.website" class="logo logo-light">
+            <span class="logo-sm">
+                <img src="https://thegioinoithat.website/assets/images/logo/logo.png" alt="" height="40" />
+            </span>
+            <span class="logo-lg">
+                <img src="https://thegioinoithat.website/assets/images/logo/logo.png" alt="" height="80" />
+            </span>
+        </a>
+                <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover" id="vertical-hover">
+            <i class="ri-record-circle-line"></i>
+        </button>
+            </div>
+
+            <div id="scrollbar">
+                <div class="container-fluid">
+                    <div id="two-column-menu"></div>
+                    <ul class="navbar-nav" id="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="https://thegioinoithat.website/admin">
+                        <i data-feather="home"></i>
+                        <span data-key="t-widgets">Bảng điều khiển</span>
+                    </a>
+                        </li>
+
+                        <!-- end Dashboard Menu -->
+
+                        <li class="menu-title">
+                            <i class="ri-more-fill"></i>
+                            <span data-key="t-pages">TÀI KHOẢN</span>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebarAuth" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarAuth">
+                        <i class="mdi mdi-account-circle-outline"></i>
+                        <span data-key="t-authentication">Quản lý tài khoản</span>
+                    </a>
+                            <div class="collapse menu-dropdown" id="sidebarAuth">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="https://thegioinoithat.website/admin/user" class="nav-link" data-key="t-starter">
+                                    Tất cả tài khoản
+                                </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu-title">
+                            <i class="ri-more-fill"></i>
+                            <span data-key="t-pages">SẢN PHẨM</span>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebarPages5" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarPages">
+                        <i class="bx bx-category-alt fs-22"></i>
+                        <span data-key="t-pages">Quản lý sản phẩm</span>
+                    </a>
+                            <div class="collapse menu-dropdown" id="sidebarPages5">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="https://thegioinoithat.website/admin/product" class="nav-link" data-key="t-starter">
+                                    Tất cả sản phẩm
+                                </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="https://thegioinoithat.website/admin/product/create" class="nav-link" data-key="t-team">
+                                    Thêm sản phẩm
+                                </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebarPages1" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarPages">
+                        <i data-feather="tag"></i>
+                        <span data-key="t-pages">Quản lý danh mục</span>
+                    </a>
+                            <div class="collapse menu-dropdown" id="sidebarPages1">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="https://thegioinoithat.website/admin/category-product" class="nav-link" data-key="t-starter">
+                                    Tất cả danh mục
+                                </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebarPages3" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarPages">
+                        <i data-feather="briefcase"></i>
+                        <span data-key="t-pages">Quản lý thương hiệu</span>
+                    </a>
+                            <div class="collapse menu-dropdown" id="sidebarPages3">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="https://thegioinoithat.website/admin/brands" class="nav-link" data-key="t-starter">
+                                    Tất cả thương hiệu
+                                </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu-title">
+                            <i class="ri-more-fill"></i>
+                            <span data-key="t-pages">Dịch vụ</span>
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="#sidebarService" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCmt">
+                        <i data-feather="life-buoy"></i>
+                        <span data-key="t-pages">Quản lý dịch vụ</span>
+                    </a>
+                                <div class="collapse menu-dropdown" id="sidebarService">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="https://thegioinoithat.website/admin/service" class="nav-link" data-key="t-team">
+                                    Tất cả dịch vụ
+                                </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu-title">
+                                <i class="ri-more-fill"></i>
+                                <span data-key="t-pages">Mã giảm giá</span>
+                                <li class="nav-item">
+                                    <a class="nav-link menu-link" href="#discount" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="discount">
+                        <i data-feather="life-buoy"></i>
+                        <span data-key="t-pages">Quản lý mã giảm giá</span>
+                    </a>
+                                    <div class="collapse menu-dropdown" id="discount">
+                                        <ul class="nav nav-sm flex-column">
+                                            <li class="nav-item">
+                                                <a href="https://thegioinoithat.website/admin/coupon" class="nav-link" data-key="t-team">
+                                    Tất cả mã giảm giá
+                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="https://thegioinoithat.website/admin/coupon/create" class="nav-link" data-key="t-team">
+                                    Thêm mã giảm giá
+                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="menu-title">
+                                    <i class="ri-more-fill"></i>
+                                    <span data-key="t-pages">Bài viết</span>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link menu-link" href="#sidebarBlog" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarBlog">
+                        <i data-feather="edit"></i>
+                        <span data-key="t-pages">Quản lý bài viết</span>
+                    </a>
+                                    <div class="collapse menu-dropdown" id="sidebarBlog">
+                                        <ul class="nav nav-sm flex-column">
+                                            <li class="nav-item">
+                                                <a href="https://thegioinoithat.website/admin/post" class="nav-link" data-key="t-starter">
+                                    Tất cả bài viết
+                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link menu-link" href="#sidebarBlog1" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarBlog1">
+                        <i data-feather="tag"></i>
+                        <span data-key="t-pages">Quản lý danh mục</span>
+                    </a>
+                                    <div class="collapse menu-dropdown" id="sidebarBlog1">
+                                        <ul class="nav nav-sm flex-column">
+                                            <li class="nav-item">
+                                                <a href="https://thegioinoithat.website/admin/category-blog" class="nav-link" data-key="t-starter">
+                                    Tất cả danh mục
+                                </a>
+                                            </li>
+
+
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link menu-link" href="#sidebarCmt" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCmt">
+                        <i class="ri-message-3-line"></i>
+                        <span data-key="t-pages">Quản lý bình luận</span>
+                    </a>
+                                    <div class="collapse menu-dropdown" id="sidebarCmt">
+                                        <ul class="nav nav-sm flex-column">
+                                            <li class="nav-item">
+                                                <a href="https://thegioinoithat.website/admin/comment" class="nav-link" data-key="t-starter">
+                                    Bình luận mới nhất
+                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li class="menu-title">
+                                    <i class="ri-more-fill"></i>
+                                    <span data-key="t-pages">Đơn hàng và dịch vụ</span>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link menu-link" href="#sidebarCart" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarBlog">
+                        <i class="bx bx-shopping-bag fs-22"></i>
+                        <span data-key="t-pages">Quản lý đơn hàng</span>
+                    </a>
+                                    <div class="collapse menu-dropdown" id="sidebarCart">
+                                        <ul class="nav nav-sm flex-column">
+                                            <li class="nav-item">
+                                                <a href="https://thegioinoithat.website/admin/orders" class="nav-link" data-key="t-starter">
+                                    Tất cả đơn hàng
+                                </a>
+                                            </li>
+
+
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link menu-link" href="#sidebarSV" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarBlog">
+                        <i class="bx bx-shopping-bag fs-22"></i>
+                        <span data-key="t-pages">Quản lý dịch vụ</span>
+                    </a>
+                                    <div class="collapse menu-dropdown" id="sidebarSV">
+                                        <ul class="nav nav-sm flex-column">
+                                            <li class="nav-item">
+                                                <a href="https://thegioinoithat.website/admin/book-service" class="nav-link" data-key="t-starter">
+                                    Tất cả dịch vụ
+                                </a>
+                                            </li>
+
+
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li class="menu-title">
+                                    <i class="ri-more-fill"></i>
+                                    <span data-key="t-pages">Cài đặt</span>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link menu-link" href="#sidebarSettings" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCmt">
+                        <i data-feather="settings"></i>
+                        <span data-key="t-pages">Cài đặt</span>
+                    </a>
+                                    <div class="collapse menu-dropdown" id="sidebarSettings">
+                                        <ul class="nav nav-sm flex-column">
+                                            <li class="nav-item">
+                                                <a href="https://thegioinoithat.website/admin/banner" class="nav-link" data-key="t-team">
+                                    Quản lý banner và slider
+                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </li>
+                    </ul>
+                </div>
+                <!-- Sidebar -->
+            </div>
+
+            <div class="sidebar-background"></div>
+        </div>
+        <!-- Left Sidebar End -->
+        <!-- Vertical Overlay-->
+        <div class="vertical-overlay"></div>
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+            <div class="page-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col">
+                            <div class="h-100">
+                                <div class="row mb-3 pb-1">
+                                    <div class="col-12">
+                                        <div class="d-flex align-items-lg-center flex-lg-row flex-column">
+                                            <div class="flex-grow-1">
+                                                <h4 class="fs-16 mb-1">Chào bạn, Phúc Nguyễn!</h4>
+                                                <p class="text-muted mb-0">
+                                                    Chuyện gì đang xảy ra hôm nay với các sản phẩm của bạn?
+                                                </p>
+                                            </div>
+                                            <div class="mt-3 mt-lg-0">
+                                                <form action="javascript:void(0);">
+                                                    <div class="row g-3 mb-0 align-items-center">
+                                                    </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-auto">
+                                                <a href="https://thegioinoithat.website/admin/product/create" class="btn btn-soft-success shadow-none">
+                                                <i class="ri-add-circle-line align-middle me-1"></i>
+                                                Thêm sản phẩm
+                                            </a>
+                                            </div>
+                                            <!--end col-->
+
+                                            <!--end col-->
+                                        </div>
+                                        <!--end row-->
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- end card header -->
+                            </div>
+                            <!--end col-->
+                        </div>
+                        <!--end row-->
+
+                        <div class="row">
+                            <div class="col-xl-3 col-md-6">
+                                <!-- card -->
+                                <div class="card card-animate">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-grow-1 overflow-hidden">
+                                                <p class="text-uppercase fw-medium text-muted text-truncate mb-0">
+                                                    Tổng doanh thu
+                                                </p>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <h5 class="text-success fs-14 mb-0">
+                                                </h5>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-end justify-content-between mt-4">
+                                            <div>
+                                                <h4 class="fs-22 fw-semibold ff-secondary mb-4">
+                                                    <span class="counter-value" data-target="1032000">0</span> VNĐ
+                                                </h4>
+                                            </div>
+                                            <div class="avatar-sm flex-shrink-0">
+                                                <span class="avatar-title bg-success rounded fs-3">
+                                                <i class="bx bx-dollar-circle"></i>
+                                            </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end card body -->
+                                </div>
+                                <!-- end card -->
+                            </div>
+                            <!-- end col -->
+
+                            <div class="col-xl-3 col-md-6">
+                                <!-- card -->
+                                <div class="card card-animate">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-grow-1 overflow-hidden">
+                                                <p class="text-uppercase fw-medium text-muted text-truncate mb-0">
+                                                    Đơn hàng
+                                                </p>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <h5 class="text-danger fs-14 mb-0">
+                                                </h5>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-end justify-content-between mt-4">
+                                            <div>
+                                                <h4 class="fs-22 fw-semibold ff-secondary mb-4">
+                                                    <span class="counter-value" data-target="2">0</span>
+                                                </h4>
+                                            </div>
+                                            <div class="avatar-sm flex-shrink-0">
+                                                <span class="avatar-title bg-info rounded fs-3">
+                                                <i class="bx bx-shopping-bag"></i>
+                                            </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end card body -->
+                                </div>
+                                <!-- end card -->
+                            </div>
+                            <!-- end col -->
+
+                            <div class="col-xl-3 col-md-6">
+                                <!-- card -->
+                                <div class="card card-animate">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-grow-1 overflow-hidden">
+                                                <p class="text-uppercase fw-medium text-muted text-truncate mb-0">
+                                                    Khách hàng
+                                                </p>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <h5 class="text-success fs-14 mb-0">
+                                                </h5>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-end justify-content-between mt-4">
+                                            <div>
+                                                <h4 class="fs-22 fw-semibold ff-secondary mb-4">
+                                                    <span class="counter-value" data-target="5">0</span>
+                                                </h4>
+                                            </div>
+                                            <div class="avatar-sm flex-shrink-0">
+                                                <span class="avatar-title bg-warning rounded fs-3">
+                                                <i class="bx bx-user-circle"></i>
+                                            </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end card body -->
+                                </div>
+                                <!-- end card -->
+                            </div>
+                            <!-- end col -->
+
+                            <div class="col-xl-3 col-md-6">
+                                <!-- card -->
+                                <div class="card card-animate">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-grow-1 overflow-hidden">
+                                                <p class="text-uppercase fw-medium text-muted text-truncate mb-0">
+                                                    Dịch vụ
+                                                </p>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-end justify-content-between mt-4">
+                                            <div>
+                                                <h4 class="fs-22 fw-semibold ff-secondary mb-4">
+                                                    <span class="counter-value" data-target="1">0</span>
+                                                </h4>
+                                            </div>
+                                            <div class="avatar-sm flex-shrink-0">
+                                                <span class="avatar-title bg-danger rounded fs-3">
+                                                <i class="bx bx-aperture"></i>
+                                            </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end card body -->
+                                </div>
+                                <!-- end card -->
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row-->
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header border-0 align-items-center d-flex">
+                                        <h4 class="card-title mb-0 flex-grow-1">Doanh thu</h4>
+
+                                    </div>
+                                    <!-- end card header -->
+
+                                    <div class="card-header p-0 border-0 bg-soft-light">
+                                        <div class="row g-0 text-center">
+                                            <div class="col-6 col-sm-4">
+                                                <div class="p-3 border border-dashed border-start-0">
+                                                    <h5 class="mb-1">
+                                                        <span class="counter-value" data-target="2">2</span>
+                                                    </h5>
+                                                    <p class="text-muted mb-0">Đơn hàng</p>
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-6 col-sm-4">
+                                                <div class="p-3 border border-dashed border-start-0">
+                                                    <h5 class="mb-1">
+                                                        <span class="counter-value" data-target="1032000">1,032,000</span>
+                                                    </h5>
+                                                    <p class="text-muted mb-0">Doanh thu</p>
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-6 col-sm-4">
+                                                <div class="p-3 border border-dashed border-start-0">
+                                                    <h5 class="mb-1">
+                                                        <span class="counter-value" data-target="0">0</span>
+                                                    </h5>
+                                                    <p class="text-muted mb-0">Đã hủy</p>
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+                                            <!--end col-->
+                                        </div>
+                                    </div>
+                                    <!-- end card header -->
+
+                                    <div class="card-body p-0 pb-2">
+                                        <div class="w-100">
+                                            <div id="customer_impression_charts" data-colors='["--vz-success", "--vz-primary", "--vz-danger"]' class="apex-charts" dir="ltr"></div>
+                                        </div>
+                                    </div>
+                                    <!-- end card body -->
+                                </div>
+                                <!-- end card -->
+                            </div>
+                            <!-- end col -->
+
+                            <!-- end col -->
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="card">
+                                    <div class="card-header align-items-center d-flex">
+                                        <h4 class="card-title mb-0 flex-grow-1">
+                                            Top 10 sản phẩm bán chạy nhất
+                                        </h4>
+
+                                    </div>
+                                    <!-- end card header -->
+
+                                    <div class="card-body">
+                                        <div class="table-responsive table-card">
+                                            <table class="table table-hover table-centered align-middle table-nowrap mb-0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="avatar-sm bg-light rounded p-1 me-2">
+                                                                    <img src="https://cdn.tgdd.vn/Products/Images/9818/238696/bhx/-202306010839487034.jpg" alt="" class="img-fluid d-block" />
+                                                                </div>
+                                                                <div>
+                                                                    <h5 class="fs-14 my-1">
+                                                                        <a href="https://thegioinoithat.website/san-pham/thuc-an-cho-cho-lon-pedigree-huong-bo-va-rau-cu-bao-10kg" class="d-inline-block text-truncate" style="width: 200px;">Thức ăn cho chó lớn Pedigree hương bò và rau củ bao 10kg</a>
+                                                                    </h5>
+                                                                    <span class="text-muted">28/07/2023</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="fs-14 my-1 fw-normal">
+                                                                516,000</h5>
+                                                            <span class="text-muted">Giá</span>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="fs-14 my-1 fw-normal">
+                                                                2</h5>
+                                                            <span class="text-muted">Đơn hàng</span>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="fs-14 my-1 fw-normal">
+                                                                38</h5>
+                                                            <span class="text-muted">Kho</span>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="fs-14 my-1 fw-normal">
+                                                                516,000</h5>
+                                                            <span class="text-muted">Doanh thu</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-6">
+                                <div class="card card-height-100">
+                                    <div class="card-header align-items-center d-flex">
+                                        <h4 class="card-title mb-0 flex-grow-1">
+                                            Top 10 dịch vụ đặt lịch
+                                        </h4>
+
+                                    </div>
+                                    <!-- end card header -->
+
+                                    <div class="card-body">
+                                        <div class="table-responsive table-card">
+                                            <table class="table table-centered table-hover align-middle table-nowrap mb-0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="flex-shrink-0 me-2">
+                                                                    <img src="https://thegioinoithat.website/petscare/public/assets/files/2dv.jpg" alt="" class="avatar-sm p-2" />
+                                                                </div>
+                                                                <div>
+                                                                    <h5 class="fs-14 my-1 fw-medium">
+                                                                        <a href="https://thegioinoithat.website/dich-vu" class="text-reset">Dịch vụ huấn luyện thú</a>
+                                                                    </h5>
+                                                                    <span class="text-muted">28/07/2023</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span class="d-inline-block text-truncate text-muted" style="width: 200px;">Đào tạo và giáo dục thú cưng để cải thiện hành vi và tăng cường kỹ năng.</span>
+                                                        </td>
+                                                        <td>
+                                                            <p class="mb-0">
+                                                                1</p>
+                                                            <span class="text-muted">Đặt lịch</span>
+                                                        </td>
+                                                        <td>
+                                                            <p class="mb-0">
+                                                                800,000</p>
+                                                            <span class="text-muted">Giá</span>
+                                                        </td>
+                                                        <td>
+                                                            <p class="mb-0">
+                                                                800,000</p>
+                                                            <span class="text-muted">Doah thu</span>
+                                                        </td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!-- end table -->
+                                        </div>
+
+
+                                    </div>
+                                    <!-- .card-body-->
+                                </div>
+                                <!-- .card-->
+                            </div>
+                            <!-- .col-->
+                        </div>
+                        <!-- end row-->
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header align-items-center d-flex">
+                                        <h4 class="card-title mb-0 flex-grow-1">
+                                            Đơn hàng trong hôm nay
+                                        </h4>
+
+                                    </div>
+                                    <!-- end card header -->
+
+                                    <div class="card-body">
+                                        <div class="table-responsive table-card">
+                                            <table class="table table-borderless table-centered align-middle table-nowrap mb-0">
+                                                <thead class="text-muted table-light">
+                                                    <tr>
+                                                        <th scope="col">Mã đơn hàng</th>
+                                                        <th scope="col">Khách hàng</th>
+                                                        <th scope="col">Số lượng sản phẩm</th>
+                                                        <th scope="col">Voucher</th>
+                                                        <th scope="col">Tổng dự tính</th>
+                                                        <th scope="col">Tổng giá tiền</th>
+                                                        <th scope="col">Trạng thái</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <a href="apps-ecommerce-order-details.html" class="fw-medium link-primary">DH16905324207877</a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="flex-shrink-0 me-2">
+                                                                    <img src="https://lh3.googleusercontent.com/a/AAcHTtcXWyGk9c6NZnUCWAVq7WX5eKpRNqAY_TEKOz8xUaY-=s96-c" alt="" class="avatar-xs rounded-circle shadow" />
+                                                                </div>
+                                                                <div class="flex-grow-1">Huynh Tuan Kiet (FPL HCM)
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>1</td>
+                                                        <td>
+                                                            -
+
+                                                        </td>
+                                                        <td>
+                                                            <span class="text-success">1,032,000</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="text-success">1,032,000</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge bg-success">COMPLETED</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <a href="apps-ecommerce-order-details.html" class="fw-medium link-primary">DH16905324905483</a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="flex-shrink-0 me-2">
+                                                                    <img src="https://lh3.googleusercontent.com/a/AAcHTtdXK48K74hBHoYgwkHwiuKZm6KTUYlql9cjKIjmuH6_=s96-c" alt="" class="avatar-xs rounded-circle shadow" />
+                                                                </div>
+                                                                <div class="flex-grow-1">Ton That An Khuong (FPL HCM)
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>4</td>
+                                                        <td>
+                                                            -
+
+                                                        </td>
+                                                        <td>
+                                                            <span class="text-success">1,050,500</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="text-success">1,050,500</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge bg-info">ACCEPTED</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                                <!-- end tbody -->
+                                            </table>
+                                            <!-- end table -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- .card-->
+                            </div>
+                            <!-- .col-->
+                        </div>
+                        <!-- end row-->
+                    </div>
+                    <!-- end .h-100-->
+                </div>
+                <!-- end col -->
+
+            </div>
+        </div>
+        <!-- container-fluid -->
+    </div>
+    <!-- End Page-content -->
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script>
+                    © PetsCare.
+                </div>
+                <div class="col-sm-6">
+                    <div class="text-sm-end d-none d-sm-block">
+                        Thiết kế & Phát triển bởi PetsCare
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <!-- end main content-->
+    </div>
+    <!-- END layout-wrapper -->
+
+    <!--start back-to-top-->
+    <button onclick="topFunction()" class="btn btn-danger btn-icon" id="back-to-top">
+    <i class="ri-arrow-up-line"></i>
+</button>
+    <!--end back-to-top-->
+
+    <!--preloader-->
+    <div id="preloader">
+        <div id="status">
+            <div class="spinner-border text-primary avatar-sm" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="customizer-setting d-none d-md-block">
+        <div class="btn-info btn-rounded shadow-lg btn btn-icon btn-lg p-2" data-bs-toggle="offcanvas" data-bs-target="#theme-settings-offcanvas" aria-controls="theme-settings-offcanvas">
+            <i class="mdi mdi-spin mdi-cog-outline fs-22"></i>
+        </div>
+    </div>
+
+    <!-- Theme Settings -->
+    <div class="offcanvas offcanvas-end border-0" tabindex="-1" id="theme-settings-offcanvas">
+        <div class="d-flex align-items-center bg-primary bg-gradient p-3 offcanvas-header">
+            <h5 class="m-0 me-2 text-white">Chỉnh sửa chủ đề</h5>
+
+            <button type="button" class="btn-close btn-close-white ms-auto" id="customizerclose-btn" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body p-0">
+            <div data-simplebar class="h-100">
+                <div class="p-4">
+                    <h6 class="mb-0 fw-semibold text-uppercase fs-12">Chủ đề</h6>
+                    <p class="text-muted">Chọn chủ đề</p>
+
+                    <div class="row gy-3">
+                        <div class="col-4">
+                            <div class="form-check card-radio">
+                                <input id="customizer-layout01" name="data-layout" type="radio" value="vertical" class="form-check-input" />
+                                <label class="form-check-label p-0 avatar-md w-100 shadow-sm" for="customizer-layout01">
+                                <span class="d-flex gap-1 h-100">
+                                    <span class="flex-shrink-0">
+                                        <span class="bg-light d-flex h-100 flex-column gap-1 p-1">
+                                            <span class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
+                                            <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                            <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                            <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                        </span>
+                                    </span>
+                                    <span class="flex-grow-1">
+                                        <span class="d-flex h-100 flex-column">
+                                            <span class="bg-light d-block p-1"></span>
+                                            <span class="bg-light d-block p-1 mt-auto"></span>
+                                        </span>
+                                    </span>
+                                </span>
+                            </label>
+                            </div>
+                            <h5 class="fs-13 text-center mt-2">Chiều dọc</h5>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-check card-radio">
+                                <input id="customizer-layout02" name="data-layout" type="radio" value="horizontal" class="form-check-input" />
+                                <label class="form-check-label p-0 avatar-md w-100 shadow-sm" for="customizer-layout02">
+                                <span class="d-flex h-100 flex-column gap-1">
+                                    <span class="bg-light d-flex p-1 gap-1 align-items-center">
+                                        <span class="d-block p-1 bg-soft-primary rounded me-1"></span>
+                                        <span class="d-block p-1 pb-0 px-2 bg-soft-primary ms-auto"></span>
+                                        <span class="d-block p-1 pb-0 px-2 bg-soft-primary"></span>
+                                    </span>
+                                    <span class="bg-light d-block p-1"></span>
+                                    <span class="bg-light d-block p-1 mt-auto"></span>
+                                </span>
+                            </label>
+                            </div>
+                            <h5 class="fs-13 text-center mt-2">Chiều ngang</h5>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-check card-radio">
+                                <input id="customizer-layout03" name="data-layout" type="radio" value="twocolumn" class="form-check-input" />
+                                <label class="form-check-label p-0 avatar-md w-100 shadow-sm" for="customizer-layout03">
+                                <span class="d-flex gap-1 h-100">
+                                    <span class="flex-shrink-0">
+                                        <span class="bg-light d-flex h-100 flex-column gap-1">
+                                            <span class="d-block p-1 bg-soft-primary mb-2"></span>
+                                            <span class="d-block p-1 pb-0 bg-soft-primary"></span>
+                                            <span class="d-block p-1 pb-0 bg-soft-primary"></span>
+                                            <span class="d-block p-1 pb-0 bg-soft-primary"></span>
+                                        </span>
+                                    </span>
+                                    <span class="flex-shrink-0">
+                                        <span class="bg-light d-flex h-100 flex-column gap-1 p-1">
+                                            <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                            <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                            <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                            <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                        </span>
+                                    </span>
+                                    <span class="flex-grow-1">
+                                        <span class="d-flex h-100 flex-column">
+                                            <span class="bg-light d-block p-1"></span>
+                                            <span class="bg-light d-block p-1 mt-auto"></span>
+                                        </span>
+                                    </span>
+                                </span>
+                            </label>
+                            </div>
+                            <h5 class="fs-13 text-center mt-2">2 cột</h5>
+                        </div>
+                        <!-- end col -->
+
+                        <div class="col-4">
+                            <div class="form-check card-radio">
+                                <input id="customizer-layout04" name="data-layout" type="radio" value="semibox" class="form-check-input" />
+                                <label class="form-check-label p-0 avatar-md w-100 shadow-sm" for="customizer-layout04">
+                                <span class="d-flex gap-1 h-100">
+                                    <span class="flex-shrink-0 p-1">
+                                        <span class="bg-light d-flex h-100 flex-column gap-1 p-1">
+                                            <span class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
+                                            <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                            <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                            <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                        </span>
+                                    </span>
+                                    <span class="flex-grow-1">
+                                        <span class="d-flex h-100 flex-column pt-1 pe-2">
+                                            <span class="bg-light d-block p-1"></span>
+                                            <span class="bg-light d-block p-1 mt-auto"></span>
+                                        </span>
+                                    </span>
+                                </span>
+                            </label>
+                            </div>
+                            <h5 class="fs-13 text-center mt-2">Box</h5>
+                        </div>
+                        <!-- end col -->
+                    </div>
+
+                    <h6 class="mt-4 mb-0 fw-semibold text-uppercase fs-12">
+                        Bảng màu
+                    </h6>
+                    <p class="text-muted">Chọn bảng màu</p>
+
+                    <div class="colorscheme-cardradio">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="form-check card-radio">
+                                    <input class="form-check-input" type="radio" name="data-layout-mode" id="layout-mode-light" value="light" />
+                                    <label class="form-check-label p-0 avatar-md w-100 shadow-sm" for="layout-mode-light">
+                                    <span class="d-flex gap-1 h-100">
+                                        <span class="flex-shrink-0">
+                                            <span class="bg-light d-flex h-100 flex-column gap-1 p-1">
+                                                <span class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                            </span>
+                                        </span>
+                                        <span class="flex-grow-1">
+                                            <span class="d-flex h-100 flex-column">
+                                                <span class="bg-light d-block p-1"></span>
+                                                <span class="bg-light d-block p-1 mt-auto"></span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </label>
+                                </div>
+                                <h5 class="fs-13 text-center mt-2">Sáng</h5>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="form-check card-radio dark">
+                                    <input class="form-check-input" type="radio" name="data-layout-mode" id="layout-mode-dark" value="dark" />
+                                    <label class="form-check-label p-0 avatar-md w-100 shadow-sm bg-dark" for="layout-mode-dark">
+                                    <span class="d-flex gap-1 h-100">
+                                        <span class="flex-shrink-0">
+                                            <span class="bg-soft-light d-flex h-100 flex-column gap-1 p-1">
+                                                <span class="d-block p-1 px-2 bg-soft-light rounded mb-2"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-light"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-light"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-light"></span>
+                                            </span>
+                                        </span>
+                                        <span class="flex-grow-1">
+                                            <span class="d-flex h-100 flex-column">
+                                                <span class="bg-soft-light d-block p-1"></span>
+                                                <span class="bg-soft-light d-block p-1 mt-auto"></span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </label>
+                                </div>
+                                <h5 class="fs-13 text-center mt-2">Tối</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="sidebar-visibility">
+                        <h6 class="mt-4 mb-0 fw-semibold text-uppercase fs-12">
+                            Hiển thị
+                        </h6>
+                        <p class="text-muted">Chọn hiển thị hoặc ẩn</p>
+
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="form-check card-radio">
+                                    <input class="form-check-input" type="radio" name="data-sidebar-visibility" id="sidebar-visibility-show" value="show" />
+                                    <label class="form-check-label p-0 avatar-md w-100 shadow-sm" for="sidebar-visibility-show">
+                                    <span class="d-flex gap-1 h-100">
+                                        <span class="flex-shrink-0 p-1">
+                                            <span class="bg-light d-flex h-100 flex-column gap-1 p-1">
+                                                <span class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                            </span>
+                                        </span>
+                                        <span class="flex-grow-1">
+                                            <span class="d-flex h-100 flex-column pt-1 pe-2">
+                                                <span class="bg-light d-block p-1"></span>
+                                                <span class="bg-light d-block p-1 mt-auto"></span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </label>
+                                </div>
+                                <h5 class="fs-13 text-center mt-2">Hiển thị</h5>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-check card-radio">
+                                    <input class="form-check-input" type="radio" name="data-sidebar-visibility" id="sidebar-visibility-hidden" value="hidden" />
+                                    <label class="form-check-label p-0 avatar-md w-100 px-2 shadow-sm" for="sidebar-visibility-hidden">
+                                    <span class="d-flex gap-1 h-100">
+                                        <span class="flex-grow-1">
+                                            <span class="d-flex h-100 flex-column pt-1 px-2">
+                                                <span class="bg-light d-block p-1"></span>
+                                                <span class="bg-light d-block p-1 mt-auto"></span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </label>
+                                </div>
+                                <h5 class="fs-13 text-center mt-2">Ẩn</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="layout-width">
+                        <h6 class="mt-4 mb-0 fw-semibold text-uppercase fs-12">
+                            Chủ đề
+                        </h6>
+                        <p class="text-muted">Chọn bố cục</p>
+
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="form-check card-radio">
+                                    <input class="form-check-input" type="radio" name="data-layout-width" id="layout-width-fluid" value="fluid" />
+                                    <label class="form-check-label p-0 avatar-md w-100 shadow-sm" for="layout-width-fluid">
+                                    <span class="d-flex gap-1 h-100">
+                                        <span class="flex-shrink-0">
+                                            <span class="bg-light d-flex h-100 flex-column gap-1 p-1">
+                                                <span class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                            </span>
+                                        </span>
+                                        <span class="flex-grow-1">
+                                            <span class="d-flex h-100 flex-column">
+                                                <span class="bg-light d-block p-1"></span>
+                                                <span class="bg-light d-block p-1 mt-auto"></span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </label>
+                                </div>
+                                <h5 class="fs-13 text-center mt-2">Fluid</h5>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-check card-radio">
+                                    <input class="form-check-input" type="radio" name="data-layout-width" id="layout-width-boxed" value="boxed" />
+                                    <label class="form-check-label p-0 avatar-md w-100 shadow-sm px-2" for="layout-width-boxed">
+                                    <span class="d-flex gap-1 h-100 border-start border-end">
+                                        <span class="flex-shrink-0">
+                                            <span class="bg-light d-flex h-100 flex-column gap-1 p-1">
+                                                <span class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                            </span>
+                                        </span>
+                                        <span class="flex-grow-1">
+                                            <span class="d-flex h-100 flex-column">
+                                                <span class="bg-light d-block p-1"></span>
+                                                <span class="bg-light d-block p-1 mt-auto"></span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </label>
+                                </div>
+                                <h5 class="fs-13 text-center mt-2">Boxed</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="layout-position">
+                        <h6 class="mt-4 mb-0 fw-semibold text-uppercase fs-12">
+                            Vị trí chủ đề
+                        </h6>
+                        <p class="text-muted">
+                            Chọn vị trí bố cục cố định hoặc cuộn.
+                        </p>
+
+                        <div class="btn-group radio" role="group">
+                            <input type="radio" class="btn-check" name="data-layout-position" id="layout-position-fixed" value="fixed" />
+                            <label class="btn btn-light w-sm" for="layout-position-fixed">Cố định</label>
+
+                            <input type="radio" class="btn-check" name="data-layout-position" id="layout-position-scrollable" value="scrollable" />
+                            <label class="btn btn-light w-sm ms-0" for="layout-position-scrollable">Cuộn</label>
+                        </div>
+                    </div>
+                    <h6 class="mt-4 mb-0 fw-semibold text-uppercase fs-12">
+                        Màu thanh bên trên
+                    </h6>
+                    <p class="text-muted">Chọn màu thanh sáng hoặc tối</p>
+
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="form-check card-radio">
+                                <input class="form-check-input" type="radio" name="data-topbar" id="topbar-color-light" value="light" />
+                                <label class="form-check-label p-0 avatar-md w-100 shadow-sm" for="topbar-color-light">
+                                <span class="d-flex gap-1 h-100">
+                                    <span class="flex-shrink-0">
+                                        <span class="bg-light d-flex h-100 flex-column gap-1 p-1">
+                                            <span class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
+                                            <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                            <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                            <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                        </span>
+                                    </span>
+                                    <span class="flex-grow-1">
+                                        <span class="d-flex h-100 flex-column">
+                                            <span class="bg-light d-block p-1"></span>
+                                            <span class="bg-light d-block p-1 mt-auto"></span>
+                                        </span>
+                                    </span>
+                                </span>
+                            </label>
+                            </div>
+                            <h5 class="fs-13 text-center mt-2">Sáng</h5>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-check card-radio">
+                                <input class="form-check-input" type="radio" name="data-topbar" id="topbar-color-dark" value="dark" />
+                                <label class="form-check-label p-0 avatar-md w-100 shadow-sm" for="topbar-color-dark">
+                                <span class="d-flex gap-1 h-100">
+                                    <span class="flex-shrink-0">
+                                        <span class="bg-light d-flex h-100 flex-column gap-1 p-1">
+                                            <span class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
+                                            <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                            <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                            <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                        </span>
+                                    </span>
+                                    <span class="flex-grow-1">
+                                        <span class="d-flex h-100 flex-column">
+                                            <span class="bg-dark d-block p-1"></span>
+                                            <span class="bg-light d-block p-1 mt-auto"></span>
+                                        </span>
+                                    </span>
+                                </span>
+                            </label>
+                            </div>
+                            <h5 class="fs-13 text-center mt-2">Tối</h5>
+                        </div>
+                    </div>
+
+                    <div id="sidebar-size">
+                        <h6 class="mt-4 mb-0 fw-semibold text-uppercase fs-12">
+                            Kích thước thanh
+                        </h6>
+                        <p class="text-muted">Chọn kích thước</p>
+
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="form-check sidebar-setting card-radio">
+                                    <input class="form-check-input" type="radio" name="data-sidebar-size" id="sidebar-size-default" value="lg" />
+                                    <label class="form-check-label p-0 avatar-md w-100 shadow-sm" for="sidebar-size-default">
+                                    <span class="d-flex gap-1 h-100">
+                                        <span class="flex-shrink-0">
+                                            <span class="bg-light d-flex h-100 flex-column gap-1 p-1">
+                                                <span class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                            </span>
+                                        </span>
+                                        <span class="flex-grow-1">
+                                            <span class="d-flex h-100 flex-column">
+                                                <span class="bg-light d-block p-1"></span>
+                                                <span class="bg-light d-block p-1 mt-auto"></span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </label>
+                                </div>
+                                <h5 class="fs-13 text-center mt-2">Mặc định</h5>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="form-check sidebar-setting card-radio">
+                                    <input class="form-check-input" type="radio" name="data-sidebar-size" id="sidebar-size-compact" value="md" />
+                                    <label class="form-check-label p-0 avatar-md w-100 shadow-sm" for="sidebar-size-compact">
+                                    <span class="d-flex gap-1 h-100">
+                                        <span class="flex-shrink-0">
+                                            <span class="bg-light d-flex h-100 flex-column gap-1 p-1">
+                                                <span class="d-block p-1 bg-soft-primary rounded mb-2"></span>
+                                                <span class="d-block p-1 pb-0 bg-soft-primary"></span>
+                                                <span class="d-block p-1 pb-0 bg-soft-primary"></span>
+                                                <span class="d-block p-1 pb-0 bg-soft-primary"></span>
+                                            </span>
+                                        </span>
+                                        <span class="flex-grow-1">
+                                            <span class="d-flex h-100 flex-column">
+                                                <span class="bg-light d-block p-1"></span>
+                                                <span class="bg-light d-block p-1 mt-auto"></span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </label>
+                                </div>
+                                <h5 class="fs-13 text-center mt-2">Vừa</h5>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="form-check sidebar-setting card-radio">
+                                    <input class="form-check-input" type="radio" name="data-sidebar-size" id="sidebar-size-small" value="sm" />
+                                    <label class="form-check-label p-0 avatar-md w-100 shadow-sm" for="sidebar-size-small">
+                                    <span class="d-flex gap-1 h-100">
+                                        <span class="flex-shrink-0">
+                                            <span class="bg-light d-flex h-100 flex-column gap-1">
+                                                <span class="d-block p-1 bg-soft-primary mb-2"></span>
+                                                <span class="d-block p-1 pb-0 bg-soft-primary"></span>
+                                                <span class="d-block p-1 pb-0 bg-soft-primary"></span>
+                                                <span class="d-block p-1 pb-0 bg-soft-primary"></span>
+                                            </span>
+                                        </span>
+                                        <span class="flex-grow-1">
+                                            <span class="d-flex h-100 flex-column">
+                                                <span class="bg-light d-block p-1"></span>
+                                                <span class="bg-light d-block p-1 mt-auto"></span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </label>
+                                </div>
+                                <h5 class="fs-13 text-center mt-2">Nhỏ</h5>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="form-check sidebar-setting card-radio">
+                                    <input class="form-check-input" type="radio" name="data-sidebar-size" id="sidebar-size-small-hover" value="sm-hover" />
+                                    <label class="form-check-label p-0 avatar-md w-100 shadow-sm" for="sidebar-size-small-hover">
+                                    <span class="d-flex gap-1 h-100">
+                                        <span class="flex-shrink-0">
+                                            <span class="bg-light d-flex h-100 flex-column gap-1">
+                                                <span class="d-block p-1 bg-soft-primary mb-2"></span>
+                                                <span class="d-block p-1 pb-0 bg-soft-primary"></span>
+                                                <span class="d-block p-1 pb-0 bg-soft-primary"></span>
+                                                <span class="d-block p-1 pb-0 bg-soft-primary"></span>
+                                            </span>
+                                        </span>
+                                        <span class="flex-grow-1">
+                                            <span class="d-flex h-100 flex-column">
+                                                <span class="bg-light d-block p-1"></span>
+                                                <span class="bg-light d-block p-1 mt-auto"></span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </label>
+                                </div>
+                                <h5 class="fs-13 text-center mt-2">Chế độ xem di chuyển chuột</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="sidebar-view">
+                        <h6 class="mt-4 mb-0 fw-semibold text-uppercase fs-12">
+                            Chế độ xem thanh bên
+                        </h6>
+                        <p class="text-muted">Chọn chế độ thanh bên</p>
+
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="form-check sidebar-setting card-radio">
+                                    <input class="form-check-input" type="radio" name="data-layout-style" id="sidebar-view-default" value="default" />
+                                    <label class="form-check-label p-0 avatar-md w-100 shadow-sm" for="sidebar-view-default">
+                                    <span class="d-flex gap-1 h-100">
+                                        <span class="flex-shrink-0">
+                                            <span class="bg-light d-flex h-100 flex-column gap-1 p-1">
+                                                <span class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                            </span>
+                                        </span>
+                                        <span class="flex-grow-1">
+                                            <span class="d-flex h-100 flex-column">
+                                                <span class="bg-light d-block p-1"></span>
+                                                <span class="bg-light d-block p-1 mt-auto"></span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </label>
+                                </div>
+                                <h5 class="fs-13 text-center mt-2">Mặc định</h5>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-check sidebar-setting card-radio">
+                                    <input class="form-check-input" type="radio" name="data-layout-style" id="sidebar-view-detached" value="detached" />
+                                    <label class="form-check-label p-0 avatar-md w-100 shadow-sm" for="sidebar-view-detached">
+                                    <span class="d-flex h-100 flex-column">
+                                        <span class="bg-light d-flex p-1 gap-1 align-items-center px-2">
+                                            <span class="d-block p-1 bg-soft-primary rounded me-1"></span>
+                                            <span class="d-block p-1 pb-0 px-2 bg-soft-primary ms-auto"></span>
+                                            <span class="d-block p-1 pb-0 px-2 bg-soft-primary"></span>
+                                        </span>
+                                        <span class="d-flex gap-1 h-100 p-1 px-2">
+                                            <span class="flex-shrink-0">
+                                                <span class="bg-light d-flex h-100 flex-column gap-1 p-1">
+                                                    <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                    <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                    <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                        <span class="bg-light d-block p-1 mt-auto px-2"></span>
+                                    </span>
+                                </label>
+                                </div>
+                                <h5 class="fs-13 text-center mt-2">Tách</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="sidebar-color">
+                        <h6 class="mt-4 mb-0 fw-semibold text-uppercase fs-12">
+                            Màu thanh
+                        </h6>
+                        <p class="text-muted">Chọn màu</p>
+
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="form-check sidebar-setting card-radio" data-bs-toggle="collapse" data-bs-target="#collapseBgGradient.show">
+                                    <input class="form-check-input" type="radio" name="data-sidebar" id="sidebar-color-light" value="light" />
+                                    <label class="form-check-label p-0 avatar-md w-100" for="sidebar-color-light">
+                                    <span class="d-flex gap-1 h-100">
+                                        <span class="flex-shrink-0">
+                                            <span class="bg-white border-end d-flex h-100 flex-column gap-1 p-1">
+                                                <span class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                            </span>
+                                        </span>
+                                        <span class="flex-grow-1">
+                                            <span class="d-flex h-100 flex-column">
+                                                <span class="bg-light d-block p-1"></span>
+                                                <span class="bg-light d-block p-1 mt-auto"></span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </label>
+                                </div>
+                                <h5 class="fs-13 text-center mt-2">Sáng</h5>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-check sidebar-setting card-radio" data-bs-toggle="collapse" data-bs-target="#collapseBgGradient.show">
+                                    <input class="form-check-input" type="radio" name="data-sidebar" id="sidebar-color-dark" value="dark" />
+                                    <label class="form-check-label p-0 avatar-md w-100" for="sidebar-color-dark">
+                                    <span class="d-flex gap-1 h-100">
+                                        <span class="flex-shrink-0">
+                                            <span class="bg-primary d-flex h-100 flex-column gap-1 p-1">
+                                                <span class="d-block p-1 px-2 bg-soft-light rounded mb-2"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-light"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-light"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-light"></span>
+                                            </span>
+                                        </span>
+                                        <span class="flex-grow-1">
+                                            <span class="d-flex h-100 flex-column">
+                                                <span class="bg-light d-block p-1"></span>
+                                                <span class="bg-light d-block p-1 mt-auto"></span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </label>
+                                </div>
+                                <h5 class="fs-13 text-center mt-2">Tối</h5>
+                            </div>
+                            <div class="col-4">
+                                <button class="btn btn-link avatar-md w-100 p-0 overflow-hidden border collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBgGradient" aria-expanded="false" aria-controls="collapseBgGradient">
+                                <span class="d-flex gap-1 h-100">
+                                    <span class="flex-shrink-0">
+                                        <span class="bg-vertical-gradient d-flex h-100 flex-column gap-1 p-1">
+                                            <span class="d-block p-1 px-2 bg-soft-light rounded mb-2"></span>
+                                            <span class="d-block p-1 px-2 pb-0 bg-soft-light"></span>
+                                            <span class="d-block p-1 px-2 pb-0 bg-soft-light"></span>
+                                            <span class="d-block p-1 px-2 pb-0 bg-soft-light"></span>
+                                        </span>
+                                    </span>
+                                    <span class="flex-grow-1">
+                                        <span class="d-flex h-100 flex-column">
+                                            <span class="bg-light d-block p-1"></span>
+                                            <span class="bg-light d-block p-1 mt-auto"></span>
+                                        </span>
+                                    </span>
+                                </span>
+                            </button>
+                                <h5 class="fs-13 text-center mt-2">Dốc</h5>
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                        <div class="collapse" id="collapseBgGradient">
+                            <div class="d-flex gap-2 flex-wrap img-switch p-2 px-3 bg-light rounded">
+                                <div class="form-check sidebar-setting card-radio">
+                                    <input class="form-check-input" type="radio" name="data-sidebar" id="sidebar-color-gradient" value="gradient" />
+                                    <label class="form-check-label p-0 avatar-xs rounded-circle" for="sidebar-color-gradient">
+                                    <span class="avatar-title rounded-circle bg-vertical-gradient"></span>
+                                </label>
+                                </div>
+                                <div class="form-check sidebar-setting card-radio">
+                                    <input class="form-check-input" type="radio" name="data-sidebar" id="sidebar-color-gradient-2" value="gradient-2" />
+                                    <label class="form-check-label p-0 avatar-xs rounded-circle" for="sidebar-color-gradient-2">
+                                    <span class="avatar-title rounded-circle bg-vertical-gradient-2"></span>
+                                </label>
+                                </div>
+                                <div class="form-check sidebar-setting card-radio">
+                                    <input class="form-check-input" type="radio" name="data-sidebar" id="sidebar-color-gradient-3" value="gradient-3" />
+                                    <label class="form-check-label p-0 avatar-xs rounded-circle" for="sidebar-color-gradient-3">
+                                    <span class="avatar-title rounded-circle bg-vertical-gradient-3"></span>
+                                </label>
+                                </div>
+                                <div class="form-check sidebar-setting card-radio">
+                                    <input class="form-check-input" type="radio" name="data-sidebar" id="sidebar-color-gradient-4" value="gradient-4" />
+                                    <label class="form-check-label p-0 avatar-xs rounded-circle" for="sidebar-color-gradient-4">
+                                    <span class="avatar-title rounded-circle bg-vertical-gradient-4"></span>
+                                </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="sidebar-img">
+                        <h6 class="mt-4 mb-0 fw-semibold text-uppercase fs-12">
+                            Hình ảnh thanh
+                        </h6>
+                        <p class="text-muted">Chọn hình ảnh thanh</p>
+
+                        <div class="d-flex gap-2 flex-wrap img-switch">
+                            <div class="form-check sidebar-setting card-radio">
+                                <input class="form-check-input" type="radio" name="data-sidebar-image" id="sidebarimg-none" value="none" />
+                                <label class="form-check-label p-0 avatar-sm h-auto" for="sidebarimg-none">
+                                <span
+                                    class="avatar-md w-auto bg-light d-flex align-items-center justify-content-center">
+                                    <i class="ri-close-fill fs-20"></i>
+                                </span>
+                            </label>
+                            </div>
+
+                            <div class="form-check sidebar-setting card-radio">
+                                <input class="form-check-input" type="radio" name="data-sidebar-image" id="sidebarimg-01" value="img-1" />
+                                <label class="form-check-label p-0 avatar-sm h-auto" for="sidebarimg-01">
+                                <img src="https://thegioinoithat.website/assets/images/sidebar/img-1.jpg" alt=""
+                                    class="avatar-md w-auto object-cover" />
+                            </label>
+                            </div>
+
+                            <div class="form-check sidebar-setting card-radio">
+                                <input class="form-check-input" type="radio" name="data-sidebar-image" id="sidebarimg-02" value="img-2" />
+                                <label class="form-check-label p-0 avatar-sm h-auto" for="sidebarimg-02">
+                                <img src="https://thegioinoithat.website/assets/images/sidebar/img-2.jpg" alt=""
+                                    class="avatar-md w-auto object-cover" />
+                            </label>
+                            </div>
+                            <div class="form-check sidebar-setting card-radio">
+                                <input class="form-check-input" type="radio" name="data-sidebar-image" id="sidebarimg-03" value="img-3" />
+                                <label class="form-check-label p-0 avatar-sm h-auto" for="sidebarimg-03">
+                                <img src="https://thegioinoithat.website/assets/images/sidebar/img-3.jpg" alt=""
+                                    class="avatar-md w-auto object-cover" />
+                            </label>
+                            </div>
+                            <div class="form-check sidebar-setting card-radio">
+                                <input class="form-check-input" type="radio" name="data-sidebar-image" id="sidebarimg-04" value="img-4" />
+                                <label class="form-check-label p-0 avatar-sm h-auto" for="sidebarimg-04">
+                                <img src="https://thegioinoithat.website/assets/images/sidebar/img-4.jpg" alt=""
+                                    class="avatar-md w-auto object-cover" />
+                            </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="preloader-menu">
+                        <h6 class="mt-4 mb-0 fw-semibold text-uppercase fs-12">
+                            Xem trước
+                        </h6>
+                        <p class="text-muted">Chọn chế độ xem</p>
+
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="form-check sidebar-setting card-radio">
+                                    <input class="form-check-input" type="radio" name="data-preloader" id="preloader-view-custom" value="enable" />
+                                    <label class="form-check-label p-0 avatar-md w-100" for="preloader-view-custom">
+                                    <span class="d-flex gap-1 h-100">
+                                        <span class="flex-shrink-0">
+                                            <span class="bg-light d-flex h-100 flex-column gap-1 p-1">
+                                                <span class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                            </span>
+                                        </span>
+                                        <span class="flex-grow-1">
+                                            <span class="d-flex h-100 flex-column">
+                                                <span class="bg-light d-block p-1"></span>
+                                                <span class="bg-light d-block p-1 mt-auto"></span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                    <!-- <div id="preloader"> -->
+                                    <div id="status" class="d-flex align-items-center justify-content-center">
+                                        <div class="spinner-border text-primary avatar-xxs m-auto" role="status">
+                                            <span class="visually-hidden">Đang tải...</span>
+                                        </div>
+                                    </div>
+                                    <!-- </div> -->
+                                </label>
+                                </div>
+                                <h5 class="fs-13 text-center mt-2">Bật</h5>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-check sidebar-setting card-radio">
+                                    <input class="form-check-input" type="radio" name="data-preloader" id="preloader-view-none" value="disable" />
+                                    <label class="form-check-label p-0 avatar-md w-100" for="preloader-view-none">
+                                    <span class="d-flex gap-1 h-100">
+                                        <span class="flex-shrink-0">
+                                            <span class="bg-light d-flex h-100 flex-column gap-1 p-1">
+                                                <span class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                            </span>
+                                        </span>
+                                        <span class="flex-grow-1">
+                                            <span class="d-flex h-100 flex-column">
+                                                <span class="bg-light d-block p-1"></span>
+                                                <span class="bg-light d-block p-1 mt-auto"></span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </label>
+                                </div>
+                                <h5 class="fs-13 text-center mt-2">Tắt</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end preloader-menu -->
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas-footer border-top p-3 text-center">
+            <div class="row">
+                <div class="col-6">
+                    <button type="button" class="btn btn-light w-100" id="reset-layout">
+                    Đặt lại mặc định
+                </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="https://thegioinoithat.website/assets/admin/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://thegioinoithat.website/assets/admin/libs/simplebar/simplebar.min.js"></script>
+    <script src="https://thegioinoithat.website/assets/admin/libs/node-waves/waves.min.js"></script>
+    <script src="https://thegioinoithat.website/assets/admin/libs/feather-icons/feather.min.js"></script>
+    <script src="https://thegioinoithat.website/assets/admin/js/pages/plugins/lord-icon-2.1.0.js"></script>
+    <script src="https://thegioinoithat.website/assets/admin/js/plugins.js"></script>
+
+    <!-- apexcharts -->
+    <script src="https://thegioinoithat.website/assets/admin/libs/apexcharts/apexcharts.min.js"></script>
+
+    <!-- Vector map-->
+    <script src="https://thegioinoithat.website/assets/admin/libs/jsvectormap/js/jsvectormap.min.js"></script>
+    <script src="https://thegioinoithat.website/assets/admin/libs/jsvectormap/maps/world-merc.js"></script>
+
+    <!--Swiper slider js-->
+    <script src="https://thegioinoithat.website/assets/admin/libs/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Dashboard init -->
+    <script src="https://thegioinoithat.website/assets/admin/js/pages/dashboard-ecommerce.init.js"></script>
+    <!-- Modern colorpicker bundle -->
+    <script src="https://thegioinoithat.website/assets/admin/libs/%40simonwep/pickr/pickr.min.js"></script>
+
+    <!-- init js -->
+    <script src="https://thegioinoithat.website/assets/admin/libs/flatpickr/flatpickr.min.js"></script>
+
+    <!-- cleave.js -->
+    <script src="https://thegioinoithat.website/assets/admin/libs/cleave.js/cleave.min.js"></script>
+    <!-- form masks init -->
+    <script src="https://thegioinoithat.website/assets/admin/js/pages/form-masks.init.js"></script>
+
+    <!-- Sweet Alerts js -->
+    <script src="https://thegioinoithat.website/assets/admin/libs/sweetalert2/sweetalert2.min.js"></script>
+
+    <!-- Sweet alert init js-->
+    <script src="https://thegioinoithat.website/assets/admin/js/pages/sweetalerts.init.js"></script>
+    <!-- dropzone min -->
+    <script src="https://thegioinoithat.website/assets/admin/libs/dropzone/dropzone-min.js"></script>
+    <!-- filepond js -->
+    <script src="https://thegioinoithat.website/assets/admin/libs/filepond/filepond.min.js"></script>
+    <script src="https://thegioinoithat.website/assets/admin/libs/filepond-plugin-image-preview/filepond-plugin-image-preview.min.js">
+    </script>
+    <script src="https://thegioinoithat.website/assets/admin/libs/filepond-plugin-file-validate-size/filepond-plugin-file-validate-size.min.js">
+    </script>
+    <script src="https://thegioinoithat.website/assets/admin/libs/filepond-plugin-image-exif-orientation/filepond-plugin-image-exif-orientation.min.js">
+    </script>
+    <script src="https://thegioinoithat.website/assets/admin/libs/filepond-plugin-file-encode/filepond-plugin-file-encode.min.js"></script>
+
+    <script src="https://thegioinoithat.website/assets/admin/js/pages/form-file-upload.init.js"></script>
+    <!-- list.js min js -->
+    <script src="https://thegioinoithat.website/assets/admin/libs/list.js/list.min.js"></script>
+
+    <!--list pagination js-->
+    <script src="https://thegioinoithat.website/assets/admin/libs/list.pagination.js/list.pagination.min.js"></script>
+
+    <!-- invoicelist init js -->
+    <script src="https://thegioinoithat.website/assets/admin/js/pages/invoiceslist.init.js"></script>
+
+    <script src="https://thegioinoithat.website/assets/admin/js/pages/ecommerce-customer-list.init.js"></script>
+
+    <!-- Sweet Alerts js -->
+    <script src="https://thegioinoithat.website/assets/admin/libs/sweetalert2/sweetalert2.min.js"></script>
+
+    <!-- App js -->
+    <script src="https://thegioinoithat.website/assets/admin/js/app.js"></script>
+
+    <script src="https://thegioinoithat.website/assets/admin/js/pages/form-editor.init.js"></script>
+    <script src="https://thegioinoithat.website/assets/js/jquery.js"></script>
+    <script src="https://thegioinoithat.website/assets/js/toast.js"></script>
+    <script>
+        function formatVietnamDong(amount) {
+            return amount.toLocaleString('vi-VN', {
+                style: 'currency',
+                currency: 'VND'
+            });
+        }
+
+        function Success(message) {
+            toastNotif({
+                text: message,
+                color: '#5bc83f',
+                timeout: 5000,
+                icon: 'valid'
+            });
+        }
+
+        function Warning(message) {
+            toastNotif({
+                text: message,
+                color: '#ebb73f',
+                timeout: 5000,
+                icon: 'warring'
+            });
+        }
+
+        function Error(message) {
+            toastNotif({
+                text: message,
+                color: '#da4848',
+                timeout: 5000,
+                icon: 'error'
+            });
+        }
+    </script>
+</body>
+
+</html>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var currentDate = new Date();
+
+        flatpickr("#datepicker", {
+            defaultDate: currentDate,
+            dateFormat: "Y-m-d"
+        });
+    });
+</script>
+
+<script>
+    function getChartColorsArray(e) {
+        if (null !== document.getElementById(e)) {
+            var t = document.getElementById(e).getAttribute("data-colors");
+            if (t)
+                return (t = JSON.parse(t)).map(function(e) {
+                    var t = e.replace(" ", "");
+                    return -1 === t.indexOf(",") ?
+                        getComputedStyle(
+                            document.documentElement
+                        ).getPropertyValue(t) || t :
+                        2 == (e = e.split(",")).length ?
+                        "rgba(" +
+                        getComputedStyle(
+                            document.documentElement
+                        ).getPropertyValue(e[0]) +
+                        "," +
+                        e[1] +
+                        ")" :
+                        t;
+                });
+            console.warn("data-colors atributes not found on", e);
+        }
+    }
+    var options,
+        chart,
+        worldemapmarkers,
+        overlay,
+        linechartcustomerColors = getChartColorsArray("customer_impression_charts"),
+        chartDonutBasicColors =
+        (linechartcustomerColors &&
+            ((options = {
+                    series: [{
+                            name: "Đơn hàng",
+                            type: "area",
+                            data: [2],
+                        },
+                        {
+                            name: "Doanh thu",
+                            type: "bar",
+                            data: ["1032000"],
+                        },
+                        {
+                            name: "Đã hủy",
+                            type: "line",
+                            data: [0],
+                        },
+                    ],
+                    chart: {
+                        height: 370,
+                        type: "line",
+                        toolbar: {
+                            show: !1
+                        }
+                    },
+                    stroke: {
+                        curve: "straight",
+                        dashArray: [0, 0, 8],
+                        width: [2, 0, 2.2],
+                    },
+                    fill: {
+                        opacity: [0.1, 0.9, 1]
+                    },
+                    markers: {
+                        size: [0, 0, 0],
+                        strokeWidth: 2,
+                        hover: {
+                            size: 4
+                        },
+                    },
+                    xaxis: {
+                        categories: ["28\/07\/2023"],
+                        axisTicks: {
+                            show: !1
+                        },
+                        axisBorder: {
+                            show: !1
+                        },
+                    },
+                    grid: {
+                        show: !0,
+                        xaxis: {
+                            lines: {
+                                show: !0
+                            }
+                        },
+                        yaxis: {
+                            lines: {
+                                show: !1
+                            }
+                        },
+                        padding: {
+                            top: 0,
+                            right: -2,
+                            bottom: 15,
+                            left: 10
+                        },
+                    },
+                    legend: {
+                        show: !0,
+                        horizontalAlign: "center",
+                        offsetX: 0,
+                        offsetY: -5,
+                        markers: {
+                            width: 9,
+                            height: 9,
+                            radius: 6
+                        },
+                        itemMargin: {
+                            horizontal: 10,
+                            vertical: 0
+                        },
+                    },
+                    plotOptions: {
+                        bar: {
+                            columnWidth: "30%",
+                            barHeight: "70%"
+                        }
+                    },
+                    colors: linechartcustomerColors,
+                    tooltip: {
+                        shared: !0,
+                        y: [{
+                                formatter: function(e) {
+                                    return void 0 !== e ? e.toFixed(0) : e;
+                                },
+                            },
+                            {
+                                formatter: function(e) {
+                                    return void 0 !== e ?
+                                        formatVietnamDong(e) :
+                                        formatVietnamDong(e);
+                                },
+                            },
+                            {
+                                formatter: function(e) {
+                                    return void 0 !== e ?
+                                        e.toFixed(0) :
+                                        e;
+                                },
+                            },
+                        ],
+                    },
+                }),
+                (chart = new ApexCharts(
+                    document.querySelector("#customer_impression_charts"),
+                    options
+                )).render()),
+            getChartColorsArray("store-visits-source")),
+        vectorMapWorldMarkersColors =
+        (chartDonutBasicColors &&
+            ((options = {
+                    series: [44, 55, 41, 17, 15],
+                    labels: ["Direct", "Social", "Email", "Other", "Referrals"],
+                    chart: {
+                        height: 333,
+                        type: "donut"
+                    },
+                    legend: {
+                        position: "bottom"
+                    },
+                    stroke: {
+                        show: !1
+                    },
+                    dataLabels: {
+                        dropShadow: {
+                            enabled: !1
+                        }
+                    },
+                    colors: chartDonutBasicColors,
+                }),
+                (chart = new ApexCharts(
+                    document.querySelector("#store-visits-source"),
+                    options
+                )).render()),
+            getChartColorsArray("sales-by-locations")),
+        swiper =
+        (vectorMapWorldMarkersColors &&
+            (worldemapmarkers = new jsVectorMap({
+                map: "world_merc",
+                selector: "#sales-by-locations",
+                zoomOnScroll: !1,
+                zoomButtons: !1,
+                selectedMarkers: [0, 5],
+                regionStyle: {
+                    initial: {
+                        stroke: "#9599ad",
+                        strokeWidth: 0.25,
+                        fill: vectorMapWorldMarkersColors[0],
+                        fillOpacity: 1,
+                    },
+                },
+                markersSelectable: !0,
+                markers: [{
+                        name: "Palestine",
+                        coords: [31.9474, 35.2272]
+                    },
+                    {
+                        name: "Russia",
+                        coords: [61.524, 105.3188]
+                    },
+                    {
+                        name: "Canada",
+                        coords: [56.1304, -106.3468]
+                    },
+                    {
+                        name: "Greenland",
+                        coords: [71.7069, -42.6043]
+                    },
+                ],
+                markerStyle: {
+                    initial: {
+                        fill: vectorMapWorldMarkersColors[1]
+                    },
+                    selected: {
+                        fill: vectorMapWorldMarkersColors[2]
+                    },
+                },
+                labels: {
+                    markers: {
+                        render: function(e) {
+                            return e.name;
+                        },
+                    },
+                },
+            })),
+            new Swiper(".vertical-swiper", {
+                slidesPerView: 2,
+                spaceBetween: 10,
+                mousewheel: !0,
+                loop: !0,
+                direction: "vertical",
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: !1
+                },
+            })),
+        layoutRightSideBtn = document.querySelector(".layout-rightside-btn");
+
+    layoutRightSideBtn &&
+        (Array.from(document.querySelectorAll(".layout-rightside-btn")).forEach(
+                function(e) {
+                    var t = document.querySelector(".layout-rightside-col");
+                    e.addEventListener("click", function() {
+                        t.classList.contains("d-block") ?
+                            (t.classList.remove("d-block"), t.classList.add("d-none")) :
+                            (t.classList.remove("d-none"),
+                                t.classList.add("d-block"));
+                    });
+                }
+            ),
+            window.addEventListener("resize", function() {
+                var e = document.querySelector(".layout-rightside-col");
+                e &&
+                    Array.from(
+                        document.querySelectorAll(".layout-rightside-btn")
+                    ).forEach(function() {
+                        window.outerWidth < 1699 || 3440 < window.outerWidth ?
+                            e.classList.remove("d-block") :
+                            1699 < window.outerWidth && e.classList.add("d-block");
+                    }),
+                    "semibox" == document.documentElement.getAttribute("data-layout") &&
+                    (e.classList.remove("d-block"), e.classList.add("d-none"));
+            }),
+            (overlay = document.querySelector(".overlay"))) &&
+        document.querySelector(".overlay").addEventListener("click", function() {
+            1 ==
+                document
+                .querySelector(".layout-rightside-col")
+                .classList.contains("d-block") &&
+                document
+                .querySelector(".layout-rightside-col")
+                .classList.remove("d-block");
+        }),
+        window.addEventListener("load", function() {
+            var e = document.querySelector(".layout-rightside-col");
+            e &&
+                Array.from(
+                    document.querySelectorAll(".layout-rightside-btn")
+                ).forEach(function() {
+                    window.outerWidth < 1699 || 3440 < window.outerWidth ?
+                        e.classList.remove("d-block") :
+                        1699 < window.outerWidth && e.classList.add("d-block");
+                }),
+                "semibox" == document.documentElement.getAttribute("data-layout") &&
+                1699 < window.outerWidth &&
+                (e.classList.remove("d-block"), e.classList.add("d-none"));
+        });
+</script>
